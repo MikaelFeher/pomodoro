@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="main.css">
+	<title>Pomodoro Clock</title>
+</head>
+<body>
+	<div id="main-container">
+		<div id="timer-container">
+			<h1 class="marginBottom" id="timer-header">Pomodoro Clock</h1>
+			<div id="timer-display" class="marginBottom">
+				<h1 id="timer-numbers-display"><span id="minutes">25</span> : <span id="seconds">00</span></h1>
+				<h1 id='timer-done-message' class="hide">TIME'S UP!</h1>
+			</div>
+			<div id="button-container" class="marginBottom">
+				<button id="start-button">Start</button>
+				<button id="pause-button">Pause</button>
+				<button id="reset-button" class="hide">Reset</button>
+			</div>
+			<div id="duration-container" class="marginBottom">
+				<p class="marginBottom">The default duration is 25 minutes.<br>There are more options in the dropdown below. </p>
+				<select id="duration-selector">
+					<option value="5">5 min</option>
+					<option value="10">10 min</option>
+					<option value="15">15 min</option>
+					<option value="20">20 min</option>
+					<option value="25" selected>25 min</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>

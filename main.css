@@ -1,0 +1,96 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: lato;
+}
+
+#main-container {
+	margin: 10% 30%;
+	text-align: center;
+	padding: 20px;
+	box-shadow: 0 0 20px 0 #333;
+	border-radius: 10px;
+}
+
+.marginBottom {
+	margin-bottom: 30px;
+}
+
+#timer-header {
+	font-size: 2.5em;
+
+	letter-spacing: .1em;
+}
+
+#timer-display {
+	font-size: 2em;
+}
+
+#button-container button {
+	font-size: 1.5em;
+	min-width: 75px;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+#button-container button:active{
+	font-size: 1.4em;
+}
+
+#start-button {
+	background: #4CAF50;
+}
+
+#pause-button {
+	background-color: #F44336;
+}
+
+#reset-button {
+	background-color: #2196F3;
+}
+
+#timer-done-message {
+	font-size: 2.5em;
+	letter-spacing: .1em;
+	animation-name: timerDoneMessage;
+	animation-duration: 1.1s;
+	animation-iteration-count: infinite;
+}
+
+#duration-selector {
+	padding: 5px;
+	border-radius: 3px;
+	background-color: #eee;
+	font-size: 1em;
+}
+
+.timer-done {
+	background-color: #4CAF50;
+}
+
+.hide {
+	display: none;
+}
+
+@keyframes timerDoneMessage {
+	0% {color: #eee; font-size: 2.7em;}
+	50% {color: #eee;font-size: 2.5em;}
+	100% {color: #eee; font-size: 2.7em;}
+}
+
+@media (max-width:1080px) {
+	#main-container {
+		margin: 20%;
+	}
+}
+@media (max-width:798px) {
+	#main-container {
+		margin: 15%;
+		padding:5px;
+	}
+}
